@@ -44,13 +44,21 @@ class Program {
         Console.WriteLine($"4. feladat: {utolso_nev}");
 
         // 5. feladat:
-        var xix = ( from sor in lista where sor.év < 1901 select (sor.név, sor.születési_dátum) );
+        var xix = ( 
+            from sor in lista 
+            where sor.év < 1901 
+            select (sor.név, sor.születési_dátum) 
+            );
         Console.WriteLine(    $"5. feladat: ");
         foreach(var sor in xix){
             Console.WriteLine($"        {sor.név} ({sor.születési_dátum}.) ");
         }
         // 6. feladat legkisebb rajtszám pilótájának nemzetisége    
-        var nemzetiség = ( from sor in lista where sor.rajtszám >0  orderby sor.rajtszám select sor.nemzetiség).First();
+        var nemzetiség = ( 
+            from sor in lista 
+            where sor.rajtszám > 0  
+            orderby sor.rajtszám select sor.nemzetiség
+            ).First();
         Console.WriteLine( $"6. feladat: {nemzetiség}");
         
         // 7. feladat
