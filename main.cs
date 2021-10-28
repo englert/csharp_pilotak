@@ -1,3 +1,4 @@
+//pilotak.csv  http://www.infojegyzet.hu/vizsgafeladatok/okj-programozas/szoftverfejleszto-210209/
 //név;születési_dátum;nemzetiség;rajtszám
 //Lewis Hamilton;1985.01.07;brit;44
 //Nick Heidfeld;1977.05.10;német;
