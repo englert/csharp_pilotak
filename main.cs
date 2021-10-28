@@ -58,7 +58,8 @@ class Program {
         var nemzetiség = ( 
             from sor in lista 
             where sor.rajtszám > 0  
-            orderby sor.rajtszám select sor.nemzetiség
+            orderby sor.rajtszám 
+            select sor.nemzetiség
             ).First();
         Console.WriteLine( $"6. feladat: {nemzetiség}");
         
